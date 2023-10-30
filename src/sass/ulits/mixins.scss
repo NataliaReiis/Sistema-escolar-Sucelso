@@ -1,0 +1,26 @@
+@mixin button-style($width, $background, $color, $borderColor, $padding, $font, $radius){
+    width: $width;
+    background-color: $background;
+    color: $color;
+    border: $borderColor;
+    padding: $padding;
+    font-size: $font ;
+    border-radius: $radius;
+    cursor: pointer;
+
+}
+@mixin input-style( $width, $borderColor, $line, $radius){
+    width: $width;
+    outline: none;
+    border: $borderColor;
+    line-height: $line;
+    border-radius: $radius;
+}
+
+@mixin text-style($size, $weight, $color, $line){
+    font-size: $size;
+    font-weight: $weight;
+    color: $color;
+    line-height: $line;
+}
+

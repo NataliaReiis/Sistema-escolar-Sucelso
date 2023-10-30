@@ -1,0 +1,138 @@
+/* HOME */
+.display{
+    display: flex;
+}
+.content-home{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+
+    h1{
+        margin-top: 2em;
+        @include text-style(2em, 500, #0D3345, 2px);
+        text-align: center;
+
+    }
+    .span{
+        margin: 2em 0 0 1em;
+        span{
+              margin: 2em 0 0 2em;
+            padding-right: 1em ;
+        }
+    }
+
+    
+}
+
+/* CARROSSEL AULAS HOME */
+
+.title-carrousel{
+    margin: 2em 0 0 2em;
+    @include text-style(1.5em, 500, #0D3345, 2px);
+}
+.carrousel{
+    width: auto;
+    margin: 2em ;
+    display: flex;
+    overflow-x: scroll;
+}
+    .content-carrousel{
+        width: 250px;
+        height: 220px;
+        margin: 1.5em;
+        background-color:#0D3345;
+        border-radius: 10px;
+
+      
+        h3{
+           padding-top: 2em;
+            text-align: center;
+            @include text-style(1em, 300, white, 18px)
+        }
+
+        button{
+            @include button-style(100px, white, #0D3345,transparent, 10px, 1em, 0.85em);
+            margin: 1em 3em;
+        }
+    }
+
+/* ROOM */
+
+.room{
+ width: auto;
+ justify-content: space-between;
+
+    .container-video{
+        width: 60%;
+
+        h1{
+            text-align: center;
+            margin: 1em;
+        }
+
+        .title-room{
+            margin: 2em 2em;
+            line-height: 30px;
+        }
+        .content-video{
+                border-radius: 20px;
+                background-color: #D9D9D9;
+                margin: 1em;
+                height: 500px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                text-align: center;
+        }
+
+        .links{
+            margin: 2em 2em 0 2em;
+            display: flex;
+            justify-content: space-between;
+        
+        }
+    }
+    .chat{
+        width: 20%;
+       
+        img{
+            height: auto;
+            width: 100%;
+        }
+    }
+}
+
+
+/* NOTAS MODELO */
+.grades-model{
+    background-color: #0D3345;
+    border-radius: 10px;
+    line-height: 1em;
+    padding: 1em;
+    margin: 2em 1em;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 70vw;
+    color: rgb(223, 213, 213);
+
+    hgroup{
+        text-align: center;
+        line-height: 1.5em;
+    }
+}
+/* NOTAS E AVALIAÇÕES */
+.container-grades{
+    width: 80%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+
+    h2{
+        margin: 2em 1em;
+        color: #0D3345;
+    }    
+   
+}

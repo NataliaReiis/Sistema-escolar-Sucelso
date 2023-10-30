@@ -1,0 +1,155 @@
+/* MENU STUDENT COMPONENT */
+.menu{
+    height: 100;
+    width: 20%;
+    background-color: #0d3345;
+  
+    .logo{
+      
+        img{
+            width: 95%;
+            margin-top: 1em;
+           
+        }
+    }
+    .dados-aluno, .dados{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        img{
+            width: 30%;
+            margin: 1em;
+        }
+        h1, h3{
+            @include text-style(1em, 300, white, 20px);
+        }
+        .dados-content{
+
+            span{
+                @include text-style(0.85em, 600, white, 1px);
+            }
+        }
+    }
+
+    nav{
+     margin-top: 10%;
+   
+        ul{
+           padding-left: 10%;
+
+           li{
+            padding-top: 10%;
+            list-style: none;
+           }
+        }
+    }
+}
+
+/* BUTTON COMPONENT */
+
+.button{
+    @include button-style(auto, none ,none, none, 10px, 1em, 20px );
+    margin-top: 1em;
+    transition: background-color 0.3s ease;
+    
+    &.small{
+        font-size: 0.75em;
+        padding: 5px 10px;
+    }
+    &.medium {
+        font-size: 0.9em;
+        padding: 1em;
+      }
+    
+    &.primary {
+        background-color: #18475E;
+        color: #fff;
+    }
+    
+    &.secondary {
+        background-color: #008C27;
+        color: #fff;
+      }
+    &.third{
+        background: white;
+        color: #000a0f;
+    }
+}
+
+/* MODAL */
+.modal{
+   width: 60%;
+   height: 70%;
+   border: 1px solid #000a0f;
+   position: fixed;
+   background-color:#000a0f ;
+   top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+   
+}
+
+/* REGISTER */
+.modal-layout{
+    background: #000a0f;
+    width: 220px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    margin: 1em;
+
+    h1{
+        @include text-style(1.3em, 400, white, 3em);
+
+    }
+    .registro{
+        padding: 1em;
+
+        label{
+            color:white;
+            
+        }
+        input{
+            width: 40%;
+            margin: 1em 1em;
+            padding: 0.3em 0;
+            outline: none
+        }
+    }
+    .button-open{
+        @include button-style( 150px,white,#18475E, none, 4px, 1em, 20px );
+    }
+    .button-close{
+        float: right;
+        margin: 0.3em;
+        @include button-style( 50px, none,#000a0f, 1px solid rgb(14, 1, 1), 4px, 2em, 10px );
+
+    }
+   
+   
+}
+
+/* BOX DASH TEACHER */
+
+.container-upload{
+    background: #000a0f;
+    width: 220px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    margin: 1em;
+
+    h1{
+        color: white;
+        font-weight: 600;
+    }
+}

@@ -1,0 +1,50 @@
+.login-section{
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    overflow-y: hidden;
+    .bg-login{
+        position: relative;
+        width: 80%;
+        height: 100%;
+        img{
+            width: 100%;
+            height: 100%;
+        }
+    }
+    .container-login{
+        position: absolute;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        left: 40%;
+            img{
+                width: 60%;
+            }
+       .content-login{
+        display: flex;
+        flex-direction: column;
+
+        input{
+            @include input-style(250px, 1px solid #18475E, 40px, 50px);
+            margin: 0.75em 0;
+            padding-left: 1em;
+             }
+        }
+        .content-login-anotherUser{
+            margin-top: 1em;
+        }
+    }
+    .content-utils{
+        margin: 0.75em, 0;
+
+        label, a{
+            margin: 1em;
+            @include text-style(0.75em, normal, #18475E, 0)
+        }
+       
+    }
+}
+
